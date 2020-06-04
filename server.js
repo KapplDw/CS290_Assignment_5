@@ -27,7 +27,7 @@ app.use(express.static('public'));
 // Displays homepage with all twits loaded
 
 app.get( '/', function (req, res, next){
-  res.status(200).render('home', {allTwits: twitData, single});
+  res.status(200).render('home', {allTwits: twitData});
 });
 
 app.get( '/twits/:indexTwit', function (req, res, next){
