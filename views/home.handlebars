@@ -1,0 +1,19 @@
+
+
+<body>
+
+    <main class="twit-container">
+
+        {{#each allTwits}}
+          {{> twitstemp}}
+        {{/each}}
+
+    </main>
+
+    {{#unless button}}
+      {{> modal}}
+    {{/unless}}
+
+  </body>
+
+</html>
